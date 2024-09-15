@@ -31,6 +31,8 @@ public class DeskController {
 
     @PostMapping
     public ResponseEntity desk (@RequestBody Desk desk){
+        desk.setAvailable(desk.isAvailable());
+        desk.setScreen(desk.isScreen());
         Desk saveDesk = deskService.saveNewDesk(desk);
 
         HttpHeaders headers = new HttpHeaders();
@@ -43,12 +45,12 @@ public class DeskController {
     public ResponseEntity desk(@PathVariable("deskId") Long deskId,
                                              @RequestBody Desk desk){
 
-        deskService.desk(deskId, desk);
+        deskService.desk(desk, deskId);
 
         return new ResponseEntity(HttpStatus.NO_CONTENT);
     }
 
-    @DeleteMapping("{deskID}")
+    @DeleteMapping("{deskId}")
     public ResponseEntity desk(@PathVariable("deskId") long deskId){
 
         deskService.deleteDeskById(deskId);

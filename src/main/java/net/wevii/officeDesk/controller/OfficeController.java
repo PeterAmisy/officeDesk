@@ -42,10 +42,10 @@ public class OfficeController {
     }
 
     @PutMapping("{officeId}")
-    public ResponseEntity office(@PathVariable("officeId") Long officeId,
+    public ResponseEntity officeChange(@PathVariable("officeId") Long officeId,
                                @RequestBody Office office){
 
-        officeService.office(officeId, office);
+        officeService.officeChange(officeId,office);
 
         return new ResponseEntity(HttpStatus.NO_CONTENT);
     }
