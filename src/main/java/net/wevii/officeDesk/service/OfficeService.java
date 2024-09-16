@@ -2,7 +2,6 @@ package net.wevii.officeDesk.service;
 
 import lombok.AllArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
-import net.wevii.officeDesk.domain.Desk;
 import net.wevii.officeDesk.domain.Office;
 import net.wevii.officeDesk.repository.OfficeRepository;
 import org.springframework.beans.factory.annotation.Autowired;

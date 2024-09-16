@@ -10,7 +10,7 @@ import java.util.Set;
 @Getter
 @Setter
 @ToString
-@Table(name = "Office")
+@Table(name = "OFFICE")
 @Entity
 public class Office{
     @Id
@@ -18,6 +18,6 @@ public class Office{
     private long id;
     private String name;
     private int numberOfDesk;
-    @OneToMany
+    @OneToMany(mappedBy = "office")
     private Set<Desk> hasDesk;
 }
