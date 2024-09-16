@@ -3,21 +3,21 @@ package net.wevii.officeDesk.domain;
 import jakarta.persistence.*;
 import lombok.*;
 
+import java.util.Date;
+
 @AllArgsConstructor
 @NoArgsConstructor
 @Getter
 @Setter
 @ToString
-@Table(name = "DESK")
+@Table(name = "RESERVATION")
 @Entity
-public class Desk {
+public class Reservation {
 
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private long id;
-    private boolean isScreen;
-    private boolean isAvailable;
-    @ManyToOne
-    @JoinColumn(name = "office_id",nullable = false)
-    private Office office;
+    private Date date;
+    @OneToOne
+    private Desk desk;
 }

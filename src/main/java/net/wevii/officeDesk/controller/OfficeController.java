@@ -1,7 +1,6 @@
 package net.wevii.officeDesk.controller;
 
 import lombok.AllArgsConstructor;
-import net.wevii.officeDesk.domain.Desk;
 import net.wevii.officeDesk.domain.Office;
 import net.wevii.officeDesk.service.OfficeService;
 import org.springframework.beans.factory.annotation.Autowired;
