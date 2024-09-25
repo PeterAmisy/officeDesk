@@ -13,7 +13,7 @@ import java.util.Optional;
 public class ReservationService {
 
     @Autowired
-    private ReservationRepository reservationRepository;
+    private final ReservationRepository reservationRepository;
 
     public void getAllReservation() {
         reservationRepository.findAll();

@@ -22,7 +22,7 @@ import java.util.List;
 public class DeskController {
 
     @Autowired
-    private DeskService deskService;
+    private final DeskService deskService;
 
     @ApiResponses({
             @ApiResponse(responseCode = "302", content = { @Content(mediaType = "application/json",

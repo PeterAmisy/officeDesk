@@ -9,10 +9,10 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 
-	<groupId>net.wevii</groupId>
-	<artifactId>WeCollab</artifactId>
+	<groupId>net.peter</groupId>
+	<artifactId>DeskCollab</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>WeCollab</name>
+	<name>DeskCollab</name>
 	<description>reservation tools for on site work</description>
 	<properties>
 		<java.version>17</java.version>
@@ -51,6 +51,10 @@
 			<groupId>org.springdoc</groupId>
 			<artifactId>springdoc-openapi-starter-webmvc-ui</artifactId>
 			<version>2.2.0</version>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-security</artifactId>
 		</dependency>
 	</dependencies>
 

@@ -24,7 +24,7 @@ import java.util.Optional;
 public class OfficeController {
 
     @Autowired
-    private OfficeService officeService;
+    private final OfficeService officeService;
 
     @ApiResponses({
             @ApiResponse(responseCode = "302", content = { @Content(mediaType = "application/json",

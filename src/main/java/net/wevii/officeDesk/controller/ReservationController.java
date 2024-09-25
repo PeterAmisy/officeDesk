@@ -22,7 +22,7 @@ import java.util.List;
 public class ReservationController {
 
     @Autowired
-    private ReservationService reservationService;
+    private final ReservationService reservationService;
 
     @ApiResponses({
             @ApiResponse(responseCode = "302", content = { @Content(mediaType = "application/json",

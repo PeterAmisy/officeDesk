@@ -17,7 +17,7 @@ import java.util.Optional;
 public class DeskService {
 
     @Autowired
-    private DeskRepository deskRepository;
+    private final DeskRepository deskRepository;
 
     public List<Desk> getAllDesk() {
         return deskRepository.findAll();

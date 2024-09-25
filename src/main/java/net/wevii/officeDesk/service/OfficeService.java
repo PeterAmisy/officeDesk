@@ -17,7 +17,7 @@ import java.util.Optional;
 public class OfficeService {
 
     @Autowired
-    private OfficeRepository officeRepository;
+    private final OfficeRepository officeRepository;
 
     public List<Office> getAllOffice() {
         return (List<Office>) officeRepository.findAll();
